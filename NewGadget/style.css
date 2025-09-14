@@ -1,0 +1,92 @@
+/* Βασικό στυλ για όλη τη σελίδα */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #B8CCC1; 
+}
+
+/* HERO SECTION */
+.hero {
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1581090700227-1e8d61e36278');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+}
+
+/* Κουμπί */
+.cta-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+}
+
+/* FEATURES SECTION */
+.features {
+  padding: 40px;
+  background-color: #b8c9b6;
+  text-align: center;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  margin: 10px 0;
+}
+
+/* TESTIMONIALS SECTION */
+.testimonials {
+  padding: 40px;
+  text-align: center;
+  background: #6a6d70;
+}
+
+.testimonial {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #3d85c6;
+}
+
+/* CALL TO ACTION SECTION */
+.cta {
+  padding: 40px;
+  background-color: #222;
+  /*color: white;*/
+  text-align: center;
+}
+
+/* Responsive για κινητά */
+@media (max-width: 600px) {
+  .hero-content {
+    padding: 10px;
+  }
+
+  .cta-btn {
+    padding: 8px 16px;
+  }
+}
+
+/* Animation για το κουμπί - έξω από το media query! */
+@keyframes flash {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.flash-button {
+  animation: flash 1.5s infinite;
+}
