@@ -1,11 +1,11 @@
-/* Βασικό στυλ για όλη τη σελίδα */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #B8CCC1; 
 }
 
-/* HERO SECTION */
+
 .hero {
   height: 100vh;
   background-image: url('https://images.unsplash.com/photo-1581090700227-1e8d61e36278');
@@ -23,7 +23,7 @@ body {
   padding: 20px;
 }
 
-/* Κουμπί */
+
 .cta-btn {
   display: inline-block;
   margin-top: 10px;
@@ -33,7 +33,7 @@ body {
   text-decoration: none;
 }
 
-/* FEATURES SECTION */
+
 .features {
   padding: 40px;
   background-color: #b8c9b6;
@@ -49,7 +49,7 @@ body {
   margin: 10px 0;
 }
 
-/* TESTIMONIALS SECTION */
+
 .testimonials {
   padding: 40px;
   text-align: center;
@@ -62,7 +62,7 @@ body {
   background-color: #3d85c6;
 }
 
-/* CALL TO ACTION SECTION */
+
 .cta {
   padding: 40px;
   background-color: #222;
@@ -70,7 +70,7 @@ body {
   text-align: center;
 }
 
-/* Responsive για κινητά */
+
 @media (max-width: 600px) {
   .hero-content {
     padding: 10px;
@@ -81,7 +81,7 @@ body {
   }
 }
 
-/* Animation για το κουμπί - έξω από το media query! */
+
 @keyframes flash {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.4; }
@@ -90,3 +90,4 @@ body {
 .flash-button {
   animation: flash 1.5s infinite;
 }
+
